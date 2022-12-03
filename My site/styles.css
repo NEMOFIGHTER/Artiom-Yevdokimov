@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?;700&family=Open+Sans&family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  background: #f1f1f1;
+  color: #0f141e;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  padding: 1rem 2rem;
+}
+.company-logo {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+}
+.nav-items {
+  display: flex;
+}
+.nav-item {
+  margin: 0 2rem;
+}
+.nav-link {
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+  background: -webkit-linear-gradient(
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+}
+.nav-link::before {
+  content: "";
+  background: linear-gradient(var(--primary-color), var(--primary-color-alt));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 150ms;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu-toggle {
+  display: none;
+}
+.bx-menu,
+.bx-x {
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    120deg,
+    var(--primary-color-alt),
+    var(--primary-color)
+  );
+
+  -webkit-text-fill-color: transparent;
+  display: none !important;
+}
+
+.company-logo {
+  color: lightblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, sans-serif;
+}
+
+.nav-items a {
+  color: lightblue;
+}
+
+.info img {
+  border-radius: 15px;
+  color: gray;
+}
+
+.info-text p {
+  font-style: initial;
+  font-weight: bold;
+  color: #86898f;
+}
+
+.info-text h1,
+h4 {
+  color: lightblue;
+}
+.info-text a {
+  color: gray;
+}
+
+.other h2 {
+  color: lightblue;
+}
+
+.other table {
+  background-color: lightblue;
+}
+
+.other th {
+  color: gray;
+}
+
+.other td {
+  color: gray;
+}
+
+.other ul {
+  border: 2px solid gray;
+  color: gray;
+  background: lightblue;
+  border-radius: 10px;
+}
